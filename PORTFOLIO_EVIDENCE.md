@@ -1,10 +1,21 @@
 # Portfolio Evidence Index
 
+The validated, current artifact-level evidence map lives in `PORTFOLIO_EVIDENCE_LEDGER.csv`.
+
+Run the ledger validator:
+
+```bash
+python tools/validate_evidence_ledger.py
+```
+
+The table below is a high-level planning index. The ledger is the source of truth for current skill clusters, artifacts, validation methods, claim levels and PR status.
+
 | Evidence Area | Current Package | Next Improvement |
 |---|---|---|
-| Cloud warehouse concepts | `cloud-warehouse-analytics-lab` | Add full SQL examples and DuckDB simulator run outputs. |
-| dbt analytics engineering | `dbt-analytics-engineering-lab` | Add staging/intermediate/mart SQL and schema tests. |
-| Orchestration | `orchestration-data-pipelines-lab` | Add executable Python shared modules and Airflow/Prefect examples. |
-| BI dashboard specification | `tableau-bi-dashboard-lab` | Add wireframes and Tableau-ready calculated fields. |
-| Supply chain control tower | `supply-chain-operations-control-tower` | Add sample data and KPI calculation scripts. |
-| Revenue growth analytics | `revenue-growth-analytics-engineering` | Add cohort/funnel SQL and Python notebook-style scripts. |
+| Cloud warehouse concepts | `cloud-warehouse-analytics-lab` | Add cost/performance notes and platform-specific query review checklist. |
+| dbt analytics engineering | `dbt-analytics-engineering-lab` | Add dbt adapter profile or CI parse/test workflow. |
+| Orchestration | `orchestration-data-pipelines-lab` | Add Dagster asset example and GitHub Actions validation workflow. |
+| BI dashboard specification | `tableau-bi-dashboard-lab` | Add sample dashboard screenshot/mock or workbook build checklist. |
+| Supply chain control tower | `supply-chain-operations-control-tower` | Add sample validation output file and dashboard mock export. |
+| Revenue growth analytics | `revenue-growth-analytics-engineering` | Add retention visualization output or dashboard-ready extract. |
+| AI-native portfolio governance | `AI-Native-Analytics-Portfolio-Roadmap` | Add recruiter guide and job target map. |
