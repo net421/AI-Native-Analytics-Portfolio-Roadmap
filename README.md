@@ -10,12 +10,28 @@ My GitHub portfolio is organized as a coverage-driven evidence system for modern
 
 | Repository | Purpose |
 |---|---|
+| `AI-Native-Analytics-Portfolio-Roadmap` | Central control plane for portfolio strategy, standards, evidence mapping, claim boundaries and review workflow. |
 | `cloud-warehouse-analytics-lab` | Demonstrate Snowflake, BigQuery, Redshift, Synapse, Databricks concepts and local DuckDB warehouse simulation. |
 | `dbt-analytics-engineering-lab` | Demonstrate dbt-style staging, intermediate, marts, tests, documentation, lineage and BI-ready models. |
 | `orchestration-data-pipelines-lab` | Demonstrate Airflow, Prefect, Dagster, Azure Data Factory, SSIS concepts, logging, retries and error handling. |
 | `tableau-bi-dashboard-lab` | Demonstrate Tableau, Looker, Sigma, dashboard specifications, calculated fields and semantic-layer thinking. |
 | `supply-chain-operations-control-tower` | Demonstrate ERP/WMS/TMS-style operations analytics and supply chain KPI control tower design. |
 | `revenue-growth-analytics-engineering` | Demonstrate funnel, cohort, retention, churn, segmentation and revenue analytics. |
+
+## Current Evidence Ledger
+
+The current source of truth for skill-to-artifact mapping is:
+
+- `PORTFOLIO_EVIDENCE_LEDGER.csv`
+- `tools/validate_evidence_ledger.py`
+
+Run:
+
+```bash
+python tools/validate_evidence_ledger.py
+```
+
+The ledger maps each major skill cluster to a repository, concrete artifacts, validation method, claim level, target roles, PR/review status and next improvement.
 
 ## Guardrails
 
