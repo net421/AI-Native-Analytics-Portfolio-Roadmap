@@ -1,22 +1,17 @@
 # Skill Coverage Matrix
 
-| Skill | Evidence repo | Artifact | Status |
-|---|---|---|---|
-| SQL avanzado | `dbt-analytics-engineering-lab` / `cloud-warehouse-analytics-lab` | CTEs, joins, windows, marts, validation queries | In progress |
-| Power BI + DAX | existing BI repos + future specs | KPI logic, DAX docs, model spec | Existing + improve |
-| Python analytics | multiple labs | pipelines, pandas, validation, CLI-style scripts | In progress |
-| dbt | `dbt-analytics-engineering-lab` | staging, intermediate, marts, tests, docs | Build |
-| Snowflake | `cloud-warehouse-analytics-lab` | SQL patterns, warehouse design notes, access model | Build |
-| BigQuery | `cloud-warehouse-analytics-lab` | partitioning, clustering, nested data examples | Build |
-| Databricks | `cloud-warehouse-analytics-lab` | PySpark equivalents, Delta Lake notes, lakehouse concepts | Build |
-| Redshift / Synapse | `cloud-warehouse-analytics-lab` | comparison docs, SQL patterns | Build |
-| Tableau | `tableau-bi-dashboard-lab` | calculated fields, dashboard specs, workbook guide | Build |
-| Looker / Sigma | `tableau-bi-dashboard-lab` | semantic layer concepts, self-service BI notes | Build |
-| Airflow / ADF | `orchestration-data-pipelines-lab` | DAGs, pipeline design docs | Build |
-| Prefect / Dagster | `orchestration-data-pipelines-lab` | flows, assets, orchestration patterns | Build |
-| SSIS concepts | `orchestration-data-pipelines-lab` | enterprise ETL concept mapping | Build |
-| Data Quality | all labs | checks, reports, tests, CI notes | Improve |
-| Supply Chain KPIs | `supply-chain-operations-control-tower` | OTIF, fill rate, inventory, lead time, freight cost | Build |
-| Revenue / Growth | `revenue-growth-analytics-engineering` | funnel, cohort, retention, churn, segmentation | Build |
-| Stakeholder storytelling | all repos | executive summaries, business questions, recommendations | Improve |
-| AI-native workflow | roadmap + all repos | human validation, reproducible outputs, tool-agnostic analytics | Improve |
+| Skill cluster | Primary evidence | Claim level |
+|---|---|---|
+| Advanced SQL and dimensional modeling | Cloud Warehouse, dbt, Revenue Growth | Validated lab evidence |
+| dbt tests, snapshots, exposures and lineage | dbt Analytics Engineering | Validated executable evidence |
+| Orchestration, retries, idempotency and failure recovery | Orchestration Data Pipelines | Validated executable evidence |
+| Governed metrics and BI semantic design | Tableau BI Dashboard Lab | Validated lab evidence; proprietary deployment not claimed |
+| Supply-chain KPIs and exceptions | Supply Chain Control Tower | Validated domain evidence |
+| Funnel, cohort, subscription and acquisition analytics | Revenue Growth | Validated domain evidence |
+| Semantic-layer agent safety and grounding | Semantic Layer AI Agent | Validated AI-native evidence |
+| Dify/RAG/API orchestration | Supply Chain Decision Twin | Preserved real integration evidence |
+| Forecast, simulation and action ranking | Supply Chain Decision Twin | Validated decision-support evidence |
+| Model/agent evaluation and release gates | MLOps/LLMOps Evaluation | Validated shared evaluation evidence |
+| Randomized experiments and ANCOVA | Causal Experimentation | Validated synthetic scientific evidence |
+| Container execution and immutable runtime patterns | Cloud Executable Analytics | Validated local/container evidence |
+| Claim governance and evidence architecture | Roadmap | Strong portfolio-governance evidence |
