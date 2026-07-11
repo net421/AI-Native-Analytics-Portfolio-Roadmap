@@ -1,0 +1,210 @@
+{
+  "active_repositories": [
+    {
+      "category": "control_plane",
+      "commit_ref": "main",
+      "evidence": "Central release ledger, architecture, recruiter paths and frozen-history policy",
+      "name": "AI-Native-Analytics-Portfolio-Roadmap",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/AI-Native-Analytics-Portfolio-Roadmap",
+      "validation": "Static portfolio ledger, architecture and claim-boundary validation in CI"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "1190a7e72230b16854c62c04dabec1b31ba52935",
+      "evidence": "ERP/WMS/TMS-style control tower, governed service and cost KPIs",
+      "name": "supply-chain-operations-control-tower",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/supply-chain-operations-control-tower",
+      "validation": "9 KPI/data checks, 2 tests and green release CI"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "140b076edcb89c3b27c3786887ee17d21494a44d",
+      "evidence": "Executable DuckDB warehouse plus Snowflake, BigQuery and lakehouse patterns",
+      "name": "cloud-warehouse-analytics-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/cloud-warehouse-analytics-lab",
+      "validation": "9 database checks, 6 export checks, 3 tests and byte-identical exports"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "263134172e4ec3f422b47c25d01a86555ea29df9",
+      "evidence": "Layered dbt project, snapshot, exposures, governed tests and evidence export",
+      "name": "dbt-analytics-engineering-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/dbt-analytics-engineering-lab",
+      "validation": "101 successful dbt results with no warnings or failures"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "bd9e67fe6ffa17695bd021ad49123d3b442f5bcf",
+      "evidence": "Validation-first orchestration, retries, atomic publication, lineage and framework mappings",
+      "name": "orchestration-data-pipelines-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/orchestration-data-pipelines-lab",
+      "validation": "11 source/output checks, 4 tests and deterministic failure/recovery scenarios"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "021e9a028d8868e7631cbc96e5d87318a5d9ad4f",
+      "evidence": "Governed BI extracts, Tableau calculations, Looker/Sigma/Power BI specifications",
+      "name": "tableau-bi-dashboard-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/tableau-bi-dashboard-lab",
+      "validation": "11 quality checks, 26 metric reconciliations and 6 tests"
+    },
+    {
+      "category": "foundational",
+      "commit_sha": "051d9bcdec25a501d57c600f373e69b70ee09276",
+      "evidence": "Funnels, cohorts, subscription movements, LTV, CAC/ROAS and customer segmentation",
+      "name": "revenue-growth-analytics-engineering",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/revenue-growth-analytics-engineering",
+      "validation": "12 database checks, 38 governance reconciliations and 8 tests"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "23297a682a17bc9e89a31f37bf9f67defbeadc98",
+      "evidence": "Governed semantic catalog, read-only SQL, independent reconciliation, lineage and refusals",
+      "name": "semantic-layer-ai-agent-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [
+        "dbt-analytics-engineering-lab",
+        "cloud-warehouse-analytics-lab"
+      ],
+      "url": "https://github.com/net421/semantic-layer-ai-agent-lab",
+      "validation": "28 tests, 20 evaluation cases and live drift validation of 3 upstream SQL contracts"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "d82d09d06e647a8cdaa1ade8b2639d3f9508f351",
+      "evidence": "Model evaluation, drift, fairness, regressions and shared fail-closed agent release gate",
+      "name": "mlops-llmops-evaluation-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [
+        "semantic-layer-ai-agent-lab",
+        "supply-chain-decision-twin-agent",
+        "dbt-analytics-engineering-lab",
+        "cloud-warehouse-analytics-lab"
+      ],
+      "url": "https://github.com/net421/mlops-llmops-evaluation-lab",
+      "validation": "Core Python 3.11/3.12 gates plus 20 Semantic Agent and 18 Decision Twin normalized checks"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "28fd0986ccadec740dd9ab9e67cbd955885f0d64",
+      "evidence": "Dify/RAG/FastAPI demo plus forecast, scenario simulation, action ranking and human approval",
+      "name": "supply-chain-decision-twin-agent",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/supply-chain-decision-twin-agent",
+      "validation": "31 end-to-end checks, 14 tests and preserved Dify API compatibility"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "dc8069c9ce317bb0352d7808272ed35dcbe4c910",
+      "evidence": "Randomized experiment, ANCOVA HC1, permutation inference, robustness and governed review envelope",
+      "name": "causal-experimentation-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/causal-experimentation-lab",
+      "validation": "Full scientific reproduction plus 24/24 fail-closed causal release checks"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "0db06f9942686fddf99a274ea118f0a330161416",
+      "evidence": "Containerized deterministic analytics pipeline with atomic evidence publication and Fargate target design",
+      "name": "cloud-executable-analytics-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/cloud-executable-analytics-lab",
+      "validation": "9 reconciliations, 13 tests, reproducible evidence and Docker read-only-root execution"
+    }
+  ],
+  "active_repository_count": 12,
+  "claim_boundary": {
+    "autonomous_operational_actions": false,
+    "production_claims_require_external_evidence": true,
+    "synthetic_local_default": true
+  },
+  "frozen_historical_repositories": [
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "near-critical-systems",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/near-critical-systems"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "controlled-near-critical",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/controlled-near-critical"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "industrial-risk-control",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/industrial-risk-control"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "Supply-Chain-Digital-Twin",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/Supply-Chain-Digital-Twin"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "Marketplace-Intelligence-Platform",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/Marketplace-Intelligence-Platform"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "CRM-Revenue-Intelligence-Dashboard",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/CRM-Revenue-Intelligence-Dashboard"
+    },
+    {
+      "category": "historical_scientific",
+      "immutable": true,
+      "implementation_backlog": false,
+      "lifecycle": "historical_frozen",
+      "name": "operational-risk-reliability-analytics",
+      "role": "Historical or scientific evidence reference only",
+      "url": "https://github.com/net421/operational-risk-reliability-analytics"
+    }
+  ],
+  "frozen_repository_count": 7,
+  "integration_policy": {
+    "conceptual_relationships_are_documented_separately": true,
+    "strict_dependencies_are_ci_or_contract_pinned_only": true
+  },
+  "owner": "net421",
+  "portfolio_version": "2026-07-11"
+}

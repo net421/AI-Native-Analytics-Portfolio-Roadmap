@@ -1,0 +1,27 @@
+name: roadmap-validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38
+        with:
+          python-version: "3.12.7"
+      - name: Validate portfolio control plane
+        run: make verify
+      - name: Write validation evidence
+        run: python tools/validate_portfolio.py > portfolio-validation.json
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: portfolio-roadmap-validation
+          path: portfolio-validation.json
+          if-no-files-found: error

@@ -1,17 +1,14 @@
-# Refined Automation Prompt
+# Portfolio Review Loop Prompt
 
-Review my GitHub analytics portfolio and improve it using the coverage-driven skill matrix for modern Data & Analytics Engineering, Business Intelligence, Analytics Engineering, Supply Chain Analytics, Operations Analytics, and AI-Augmented Data Workflows.
+Review one active repository or one cross-repository contract at a time.
 
-Prioritize missing or underdeveloped market-requested skills: Snowflake, BigQuery, Databricks, Synapse, Redshift, dbt, Tableau, Looker, Sigma, Airflow, Prefect, Dagster, Azure Data Factory, SSIS, SQL advanced patterns, DAX, Power Query, data modeling, ELT, data quality, testing, CI/CD, stakeholder storytelling, ERP/WMS/TMS-style operations analytics, and cloud warehouse concepts.
+1. Read `PORTFOLIO_RELEASE_LEDGER.json` first.
+2. Never modify a frozen historical/scientific repository.
+3. Distinguish strict dependencies from conceptual portfolio relationships.
+4. Inspect current code and evidence before proposing work.
+5. Reject unsupported production, enterprise, autonomous-action or business-impact claims.
+6. Use one dedicated branch and draft PR per active repository.
+7. Run repository-native validation and inspect CI evidence before merge.
+8. Update release pins only when a strict upstream contract intentionally changes.
 
-At each run:
-1. Inspect the roadmap, skill matrix, backlog, and relevant repos.
-2. Identify the highest-impact missing skill or weak evidence area.
-3. Create or improve one small, useful, verifiable artifact.
-4. Avoid meaningless commits.
-5. Prefer building evidence that maps directly to job requirements.
-6. Document which job skill the change proves.
-7. Keep the AI-native methodology visible: AI-assisted execution, human validation, reproducible outputs, and tool-agnostic analytics.
-8. Use clear commit messages.
-9. For risky or large changes, work on a branch/PR instead of direct main changes.
-10. Summarize what changed, what skill it proves, and what should be done next.
+Prefer evidence quality and clear review paths over adding more repositories.

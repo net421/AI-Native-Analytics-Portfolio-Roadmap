@@ -1,32 +1,25 @@
-# Coverage-Driven Backlog
+# Remaining Portfolio Backlog
 
-## First 24 Iterations
+## P0 — Final presentation
 
-1. Create central roadmap repo package. **Done**
-2. Create skill coverage matrix. **Done**
-3. Create prioritized backlog. **Done**
-4. Build cloud warehouse lab base structure. **Done**
-5. Add Snowflake SQL patterns.
-6. Add BigQuery SQL patterns.
-7. Add Databricks/PySpark concept examples.
-8. Add DuckDB local warehouse simulator.
-9. Build dbt analytics engineering lab base structure. **Done**
-10. Add `dbt_project.yml` and model folders. **Done**
-11. Add staging models.
-12. Add intermediate models.
-13. Add marts.
-14. Add `schema.yml` tests.
-15. Add dbt documentation notes.
-16. Build orchestration data pipelines lab base structure. **Done**
-17. Add Airflow DAG example.
-18. Add Prefect flow example.
-19. Add ADF pipeline design docs.
-20. Build Tableau BI dashboard lab base structure. **Done**
-21. Add Tableau calculated fields. **Done**
-22. Add Tableau dashboard wireframes.
-23. Build supply chain control tower KPI dictionary. **Done**
-24. Add stakeholder storytelling template.
+1. Update `net421/net421` after this Roadmap release.
+2. Link the profile to the Roadmap as the canonical navigation entry.
+3. Pin a balanced set of flagship repositories for analytics engineering, AI-native analytics and domain evidence.
+4. Check repository descriptions and topics for consistent, honest wording.
 
-## Automation Role Going Forward
+## P1 — Optional external execution evidence
 
-Future hourly runs should polish, validate, add examples, improve README clarity, propose commit messages, and prepare upload-ready packages. GitHub is optional and should be used only after files are ready.
+5. Publish a reviewed Tableau Public or Power BI artifact.
+6. Execute selected Snowflake/BigQuery/Databricks patterns in sandbox environments.
+7. Capture optional Airflow/Prefect/Dagster runtime evidence.
+8. Deploy the cloud-executable pattern only when an actual cloud account, cost controls and teardown process are available.
+
+## P2 — Maintenance
+
+9. Update strict dependency pins only after intentional upstream releases.
+10. Rerun shared evaluation after Semantic Agent or Decision Twin changes.
+11. Review claims and links periodically.
+
+## Excluded from backlog
+
+The seven historical/scientific repositories are immutable evidence references and are not implementation, correction, standardization or publication targets.
