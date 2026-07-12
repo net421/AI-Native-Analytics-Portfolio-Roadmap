@@ -71,6 +71,16 @@
       "validation": "12 database checks, 38 governance reconciliations and 8 tests"
     },
     {
+      "category": "foundational",
+      "commit_sha": "6a97ef0fae2995ed2008ee6db4f01e3e08eb63e6",
+      "evidence": "Deterministic supply-chain disruption simulation, tail-risk metrics, sensitivity and fail-closed reporting",
+      "name": "supply-chain-resilience-monte-carlo-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/supply-chain-resilience-monte-carlo-lab",
+      "validation": "41 tests, 8 scenarios, 5 distributions, 4 sensitivity sweeps and byte-identical seeded CSV evidence"
+    },
+    {
       "category": "ai_native",
       "commit_sha": "23297a682a17bc9e89a31f37bf9f67defbeadc98",
       "evidence": "Governed semantic catalog, read-only SQL, independent reconciliation, lineage and refusals",
@@ -127,9 +137,39 @@
       "strict_dependencies": [],
       "url": "https://github.com/net421/cloud-executable-analytics-lab",
       "validation": "9 reconciliations, 13 tests, reproducible evidence and Docker read-only-root execution"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "26acbe9ae147a98776f78aca65a7ae955ab43970",
+      "evidence": "Twenty-role political-economy multi-agent research and evidence-governance pipeline with explicit epistemic boundaries",
+      "name": "mel-governor",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/mel-governor",
+      "validation": "10 tests, 20-agent offline pipeline, 20 prompts reconciled and zero secret patterns"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "f10f943ada3e109ffadf5c6c7351c57de02055e7",
+      "evidence": "SQLite AgentOps event store, evaluation harness, aggregate metrics and byte-preserving read-only sidecar",
+      "name": "agentops-observability-lab",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/agentops-observability-lab",
+      "validation": "37 tests, 10 evaluation cases, 6 tables, 3 read-only tools and no database mutation"
+    },
+    {
+      "category": "ai_native",
+      "commit_sha": "0e6227bc9741b6c07e1d6053d1bdc35ddf294486",
+      "evidence": "Local-first guarded software-development control plane with planning, patch proposals, allowlisted validation and human review",
+      "name": "local-agentic-dev-control-plane",
+      "status": "complete_for_portfolio_scope",
+      "strict_dependencies": [],
+      "url": "https://github.com/net421/local-agentic-dev-control-plane",
+      "validation": "35 tests covering guarded apply, command allowlists, path safety, queue, memory, sprint, API and CLI"
     }
   ],
-  "active_repository_count": 12,
+  "active_repository_count": 16,
   "claim_boundary": {
     "autonomous_operational_actions": false,
     "production_claims_require_external_evidence": true,
@@ -206,5 +246,5 @@
     "strict_dependencies_are_ci_or_contract_pinned_only": true
   },
   "owner": "net421",
-  "portfolio_version": "2026-07-11"
+  "portfolio_version": "2026-07-12"
 }
